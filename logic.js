@@ -4,7 +4,11 @@ var counter = 0
 
 // updates the todos array, and returns the todo id
 function addTodo(description) {
-    const todoObj = { text: description, completed: false, id: counter }
+    const todoObj = {
+        text: description,
+        completed: false,
+        id: counter,
+    }
     todos = todos.concat(todoObj)
 
     // we increase the counter so next time we would have 
